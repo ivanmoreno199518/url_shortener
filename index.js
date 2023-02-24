@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb+srv://ivanthanon:mongodbcrema@cluster0.thjovik.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect("mongodb+srv://user@cluster0.thjovik.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology:true})
 
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, "connection error:"));
